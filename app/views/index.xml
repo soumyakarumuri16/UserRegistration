@@ -1,0 +1,48 @@
+<Alloy>
+	<Window class="container">
+		<ScrollView showVerticalScrollIndicator="true" height="100%" layout="vertical">
+			<View layout="horizontal">
+				<TextArea></TextArea>
+				<Label id="lblFirstName">First Name</Label>
+				<TextField id="txtFirstName" hintText="Enter First Name" maxLength="25"></TextField>
+				<TextArea></TextArea>
+			</View>
+			<Label class="errorMessage" id="lblErrFirstName" visible="false"></Label>
+			<View id="view1" class="line"></View>
+			<View layout="horizontal">
+				<TextArea></TextArea>
+				<Label id="lblLastName">Last Name</Label>
+				<TextField id="txtLastName" hintText="Enter Last Name" maxLength="25"></TextField>
+				<TextArea></TextArea>
+			</View>
+			<Label class="errorMessage" id="lblErrLastName" visible="false"></Label>
+			<View id="view2" class="line"></View>
+			<View layout="horizontal">
+				<TextArea></TextArea>
+				<Label id="lblUsername">Username</Label>
+				<TextField id="txtUsername" hintText="Enter Username" maxLength="16"></TextField>
+				<TextArea></TextArea>
+			</View>	
+			<Label class="errorMessage" id="lblErrUsername" visible="false"></Label>
+			<View id="view3" class="line"></View>
+			<View layout="horizontal">
+				<TextArea></TextArea>
+				<Label id="lblPassword">Password</Label>
+				<TextField id="txtPassword" hintText="Enter Password" maxLength="16" passwordMask="true"></TextField>
+				<TextArea></TextArea>
+			</View>
+			<Label class="errorMessage" id="lblErrPassword" visible="false"></Label>
+			<View id="view4" class="line"></View>
+			<View layout="horizontal">
+				<TextArea></TextArea>
+				<Label id="lblConfirmPassword">Confirm Password</Label>
+				<TextField id="txtConfirmPassword" hintText="Confirm Password" maxLength="16" passwordMask="true"></TextField>
+				<TextArea></TextArea>
+			</View>
+			<Label class="errorMessage" id="lblErrConfirmPassword" visible="false"></Label>
+			<View id="view5" class="line"></View>
+			<ActivityIndicator id="activityIndicator" message="Loading..."></ActivityIndicator>
+			<Button id="btnSubmit" onClick="submitUserDetails">Submit</Button>
+		</ScrollView>
+	</Window>
+</Alloy>
